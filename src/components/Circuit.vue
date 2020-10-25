@@ -1,8 +1,8 @@
 <template>
   <div class="circuit">
     <svg
-      width="800px"
-      height="800px"
+      width="35em"
+      height="35em"
       viewBox="0 0 800 800"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -157,8 +157,8 @@ export default {
 
 <style lang="scss" scoped>
 .circuit {
-  width: 24rem;
-  height: 24rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
     inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,

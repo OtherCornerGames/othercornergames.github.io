@@ -19,9 +19,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  height: 100vh;
   color: #98f3ff;
   overflow: hidden;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .top {
@@ -90,6 +91,7 @@ h5 {
   -moz-animation: moving-images 400s linear infinite;
   -o-animation: moving-images 400s linear infinite;
   animation: moving-images 400s linear infinite;
+  min-height: 100vh;
 }
 
 @keyframes moving-images {
