@@ -6,7 +6,7 @@
       <a href="https://othercornergames.github.io/blog">Blog</a>
     </div>
     <div class="bgs" id="bg-keyframes"></div>
-    <router-view style="margin-top: -45vh" />
+    <router-view class="top" />
   </div>
 </template>
 
@@ -24,8 +24,16 @@
   overflow: hidden;
 }
 
+.top {
+  margin-top: -1.7rem;
+}
+
 p,
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   filter: drop-shadow(0 0 1.5rem #0ff);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
