@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f315e81df52e20876dcc88129ed855b3.js"
+  "/precache-manifest.03446b76c7d65f14023843d1e62ea2af.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "othercornergames.github.io"});
