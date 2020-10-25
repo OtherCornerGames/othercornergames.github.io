@@ -47,11 +47,11 @@ h1 {
 
 #nav a {
   font-weight: bold;
-  color: #fff;
+  color: #98f3ff;
 }
 
 #nav a.router-link-exact-active {
-  color: #98f3ff;
+  color: #fff;
 }
 
 /* all the background scrolling stuff */
@@ -63,9 +63,9 @@ h1 {
   left: 0;
   right: 0;
   background: url("./assets/ground_3.png") 0 0,
-    url("./assets/ground_2.png") 40% 0, url("./assets/ground_1.png") 60% 0,
+    url("./assets/ground_2.png") 40% 0, url("./assets/ground_1.png") 50% 0,
     url("./assets/clouds_2.png") 60% 0, url("./assets/rocks.png") 90% 0,
-    url("./assets/clouds_1.png") 80%, 0, url("./assets/sky.png") 80% 0;
+    url("./assets/clouds_1.png") 70%, 0, url("./assets/sky.png") 80% 0;
   -webkit-transition: left 300s linear;
   -moz-transition: left 300s linear;
   -o-transition: left 300s linear;
