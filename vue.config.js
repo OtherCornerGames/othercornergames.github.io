@@ -1,4 +1,9 @@
 module.exports = {
     publicPath: '/',
-    outputDir: 'docs'
+    outputDir: 'docs',
+    pwa: {
+        workboxOptions: {
+            skipWaiting: true
+        }
+    }
 }

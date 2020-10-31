@@ -14,16 +14,12 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.03446b76c7d65f14023843d1e62ea2af.js"
+  "/precache-manifest.025074b5df8ca3e64a9b3c4a4a778631.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "othercornergames.github.io"});
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+workbox.core.skipWaiting();
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
