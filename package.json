@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel",
+    "copy-files": "cp -r CNAME dist",
     "build": "parcel build"
   },
   "keywords": [],
