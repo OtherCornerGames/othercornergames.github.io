@@ -1,0 +1,184 @@
+@import "./_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+
+/* all the background scrolling stuff */
+.bgs {
+    z-index: -1;
+    /* put it below the text */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:
+        url("../assets/city1/10.png") 40% 0,
+        url("../assets/city1/9.png") 140% 0,
+        url("../assets/city1/8.png") 50% 0,
+        url("../assets/city1/7.png") 800% 0,
+        url("../assets/city1/6.png") 10% 0,
+        url("../assets/city1/5.png") 70% 0,
+        url("../assets/city1/4.png") 80% 0,
+        url("../assets/city1/3.png") 20% 0,
+        url("../assets/city1/2.png") 40% 0,
+        url("../assets/city1/1.png") 0 0;
+    background-size: auto 100%;
+    -webkit-transition: left 300s linear;
+    -moz-transition: left 300s linear;
+    -o-transition: left 300s linear;
+    transition: left 300s linear;
+}
+
+#bg-hover:hover,
+#bg-target:target {
+    left: -9999px;
+}
+
+#bg-keyframes {
+    -webkit-animation: moving-images 400s linear infinite;
+    -moz-animation: moving-images 400s linear infinite;
+    -o-animation: moving-images 400s linear infinite;
+    animation: moving-images 400s linear infinite;
+    min-height: 100vh;
+}
+
+@keyframes moving-images {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -9999px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-moz-keyframes moving-images {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -9999px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes moving-images {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -9999px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-o-keyframes moving-images {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: -9999px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes neonize {
+
+    from {
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 30px #0c3094,
+            0 0 50px #0c3094,
+            0 0 70px #0c3094,
+            0 0 90px #0c3094;
+    }
+
+    to {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 5px #fff,
+            0 0 15px #0c3094,
+            0 0 25px #0c3094,
+            0 0 35px #0c3094,
+            0 0 45px #0c3094;
+    }
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 6px #fff,
+            0 0 9px #fff,
+            0 0 200px #3fe7e7,
+            0 0 500px #3fe7e7,
+            0 0 70px #3fe7e7,
+            0 0 120px #3fe7e7,
+            0 0 100px #3fe7e7;
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+.neonize {
+    color: #5ffdfd;
+    font-family: 'Neonderthaw', cursive;
+    animation: neonize 2s ease-in-out infinite alternate;
+    animation: flicker 4s infinite alternate;
+}
+
+
+.title {
+    font-size: 7rem;
+}
+
+@keyframes toggleOpacity {
+    50% {
+        opacity: 1;
+    }
+
+    /* Turn off */
+    50.001% {
+        opacity: 0.4;
+    }
+
+    /* Keep off state for a short period */
+
+    52.999% {
+        opacity: 0.4;
+    }
+
+    /* Turn back on */
+    53% {
+        opacity: 1;
+    }
+}
