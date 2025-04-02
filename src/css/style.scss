@@ -156,6 +156,16 @@
     animation: flicker 4s infinite alternate;
 }
 
+@media (max-width: 800px) {
+    * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+}
+
 
 .title {
     font-size: 7rem;
