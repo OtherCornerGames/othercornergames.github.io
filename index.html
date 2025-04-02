@@ -1,4 +1,18 @@
-<template>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
+  <title>Other Corner Games</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Hello world</h1>
+  </div>
   <div class="circuit">
     <svg
       width="35em"
@@ -139,53 +153,6 @@
       </g>
     </svg>
   </div>
-</template>
+</body>
 
-
-<script>
-export default {
-  name: "circuit",
-  data() {
-    return {};
-  },
-  computed: {},
-  methods: {},
-  components: {},
-};
-</script>
-
-
-<style lang="scss" scoped>
-.circuit {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-}
-svg {
-  position: absolute;
-  transform: translate(-77%, -36%);
-}
-
-.path {
-  animation: draw 14s infinite;
-  animation-timing-function: linear;
-}
-
-.path-2 {
-  animation: draw 14s infinite;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-}
-
-@keyframes draw {
-  0% {
-  }
-  100% {
-    stroke-dashoffset: 0;
-    stroke-opacity: 1;
-  }
-}
-</style>
+</html>
